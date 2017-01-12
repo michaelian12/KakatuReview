@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/review_card"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_picture_review_card_image_view"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:id="@+id/user_name_review_card_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:textColor="@color/primary_text_color"
+                        android:textStyle="bold"
+                        tools:text="Farrah Khayra" />
+
+                    <TextView
+                        android:id="@+id/post_time_review_card_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="12dp"
+                        tools:text="2 jam yang lalu" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/title_review_card_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text_color"
+                    android:textStyle="bold"
+                    tools:text="Lorem Ipsum Dolor Sit Amet" />
+
+                <TextView
+                    android:id="@+id/content_review_card_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/primary_text_color"
+                    tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisi sapien. Nunc placerat sem fermentum lorem ipsum. Ut enim ad minim veniam, quis nostre... Lihat Semua" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/secondary_text_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/comment_review_card_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_comment" />
+
+                <TextView
+                    android:id="@+id/total_comments_review_card_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@+id/comment_review_card_image_view"
+                    android:paddingLeft="8dp"
+                    tools:text="21" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/total_likes_review_card_text_view"
+                    android:src="@drawable/ic_like" />
+
+                <TextView
+                    android:id="@+id/total_likes_review_card_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_toLeftOf="@+id/dislike_review_card_image_view"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="24dp"
+                    tools:text="32" />
+
+                <ImageView
+                    android:id="@+id/dislike_review_card_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/total_dislikes_review_card_text_view"
+                    android:src="@drawable/ic_dislike" />
+
+                <TextView
+                    android:id="@+id/total_dislikes_review_card_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="8dp"
+                    tools:text="3" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

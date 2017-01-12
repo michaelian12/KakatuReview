@@ -1,0 +1,32 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Kakatu Review</string>
+
+    <!-- Titles for toolbar [CHAR LIMMIT=20] -->
+    <string name="title_activity_profile">Profil</string>
+    <string name="title_activity_edit_profile">Ubah Profil</string>
+    <string name="title_activity_leaderboard">Papan Peringkat</string>
+    <string name="title_activity_favorite">Favorit</string>
+    <string name="title_activity_settings">Pengaturan</string>
+    <string name="title_activity_login">Masuk</string>
+    <string name="title_activity_register">Daftar</string>
+    <string name="title_activity_review">Ulasan</string>
+
+    <!-- Review category [CHAR LIMIT=20] -->
+    <string name="category_psychologist">Ulasan Psikolog</string>
+    <string name="category_user">Ulasan Orang Tua</string>
+
+    <!-- Navigation drawer [CHAR LIMIT=20] -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- Leaderboard [CHAR LIMIT=20] -->
+    <string name="rank">Peringkat</string>
+    <string name="total_review">Jumlah Ulasan</string>
+
+    <!-- Button [CHAR LIMIT=20] -->
+    <string name="write_review">Tulis Ulasan</string>
+    <string name="edit_profile">Ubah Profil</string>
+    <string name="cancel_profile">Batal</string>
+    <string name="save_profile">Simpan</string>
+</resources>

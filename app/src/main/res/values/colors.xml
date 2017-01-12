@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#FFFFFF</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#E0E0E0</color>
+
+    <!-- Background color for app -->
+    <color name="primary_light_color">#0D887B</color>
+
+    <!-- Accent color for the app -->
+    <color name="accent_color">#34495B</color>
+
+    <!-- Primary text color for the app -->
+    <color name="primary_text_color">#212121</color>
+
+    <!-- Secondary text color for the app -->
+    <color name="secondary_text_color">#757575</color>
+
+    <!-- Divider color for the app -->
+    <color name="divider_color">#BDBDBD</color>
+</resources>
