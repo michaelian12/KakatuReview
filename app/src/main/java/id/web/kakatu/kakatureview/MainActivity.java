@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import id.web.kakatu.kakatureview.activity.FavoriteActivity;
 import id.web.kakatu.kakatureview.activity.LeaderboardActivity;
 import id.web.kakatu.kakatureview.activity.ProfileActivity;
+import id.web.kakatu.kakatureview.activity.SettingsActivity;
 import id.web.kakatu.kakatureview.adapter.ApplicationRecyclerViewAdapter;
 import id.web.kakatu.kakatureview.model.Application;
 
@@ -46,15 +47,15 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         // Floating action button
-        fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "settings", Toast.LENGTH_SHORT).show();
+//        fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getApplicationContext(), "settings", Toast.LENGTH_SHORT).show();
 //                Intent intent = new Intent(this, AddVehicleActivity.class);
 //                startActivity(intent);
-            }
-        });
+//            }
+//        });
 
         /* Set Navigation Drawer */
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -121,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     return true;
                 case R.id.nav_settings:
-                    intent = new Intent(MainActivity.this, ProfileActivity.class);
+                    intent = new Intent(MainActivity.this, SettingsActivity.class);
                     startActivity(intent);
                     return true;
                 default:

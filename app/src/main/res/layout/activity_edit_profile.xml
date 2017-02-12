@@ -135,13 +135,13 @@
             android:theme="@style/AppTheme.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cancel_profile" />
+            android:text="@string/profile_cancel" />
 
         <Button
             android:id="@+id/save_edit_profile_button"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/save_profile" />
+            android:text="@string/profile_save" />
     </LinearLayout>
 </LinearLayout>

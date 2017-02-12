@@ -49,7 +49,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="id.web.kakatu.kakatureview.MainActivity" />
         </activity>
-
         <activity
             android:name=".activity.EditProfileActivity"
             android:label="@string/title_activity_edit_profile"
@@ -60,10 +59,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="id.web.kakatu.kakatureview.activity.ProfileActivity" />
         </activity>
-
         <activity
             android:name=".activity.ReviewActivity"
             android:label="@string/title_activity_review" />
+        <activity android:name=".activity.ForgotPasswordActivity" />
+        <activity android:name=".activity.SettingsActivity"></activity>
     </application>
 
 </manifest>
