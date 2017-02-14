@@ -63,7 +63,7 @@
             android:name=".activity.ReviewActivity"
             android:label="@string/title_activity_review" />
         <activity android:name=".activity.ForgotPasswordActivity" />
-        <activity android:name=".activity.SettingsActivity"></activity>
+        <activity android:name=".activity.SettingsActivity" />
     </application>
 
 </manifest>

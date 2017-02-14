@@ -18,6 +18,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader;
+
 import java.util.ArrayList;
 
 import id.web.kakatu.kakatureview.activity.FavoriteActivity;
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private RecyclerView recyclerView;
+    private RecyclerViewHeader recyclerViewHeader;
     private ApplicationRecyclerViewAdapter adapter;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
@@ -72,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(navItemSelect);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler);
 
         // Create a list of applications
         ArrayList<Application> applications = new ArrayList<Application>();
@@ -95,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setHasFixedSize(true);
+
+        recyclerViewHeader = (RecyclerViewHeader) findViewById(R.id.header);
+        recyclerViewHeader.attachTo(recyclerView);
     }
 
     NavigationView.OnNavigationItemSelectedListener navItemSelect = new NavigationView.OnNavigationItemSelectedListener() {

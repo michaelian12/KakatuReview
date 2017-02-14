@@ -10,15 +10,31 @@
         android:layout_height="wrap_content">
 
         <include layout="@layout/toolbar" />
-
     </android.support.design.widget.AppBarLayout>
 
-    <com.chabbal.slidingdotsplash.SlidingSplashView
-        android:id="@+id/splash"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        app:imageResources="@array/img_id_arr" />
+        android:layout_height="match_parent">
 
-    <include layout="@layout/list_view" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" />
+
+        <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal|top">
+
+            <com.chabbal.slidingdotsplash.SlidingSplashView
+                android:id="@+id/splash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:imageResources="@array/img_id_arr" />
+
+        </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+    </FrameLayout>
 
 </LinearLayout>
